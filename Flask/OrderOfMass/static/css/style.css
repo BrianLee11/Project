@@ -1,0 +1,110 @@
+/* style.css */
+
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5; /* Slightly increased for readability */
+    background-color: #f5f5f5; /* A bit lighter than #fafafa */
+    color: #333;
+  }
+  
+  /* Headings */
+  h1 {
+    text-align: center;
+    margin: 1em 0 0.5em;
+    font-size: 1.8em; /* Slightly larger heading */
+    color: #333;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5em; /* A bit more padding */
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1em; /* Space below container for breathing room */
+  }
+  
+  /* Grid Layout */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em; /* Increased gap for better spacing between columns */
+    margin-bottom: 1.5em;
+  }
+  
+  /* Section Title */
+  .section-title {
+    grid-column: 1 / span 2;
+    margin-top: 0.5em;
+    font-weight: bold;
+    font-size: 1.3em;
+    border-bottom: 2px solid #bbb; /* Lighter border */
+    padding-bottom: 0.25em;
+    margin-bottom: 0.5em; /* Some space below title */
+  }
+  
+  /* Columns */
+  .col {
+    border-right: 1px solid #ccc;
+    padding: 1em; /* More padding for text comfort */
+    background-color: #fff; /* Ensure column background is white */
+    transition: background-color 0.3s ease; /* For optional hover effect */
+  }
+  .col:hover {
+    /* Optional hover effect for columns */
+    background-color: #fafafa;
+  }
+  .col.right {
+    border-right: none;
+  }
+  
+  /* Image Container */
+  .image-container {
+    text-align: center;
+    margin: 1em 0; /* Slightly bigger spacing around images */
+  }
+  .image-container img {
+    max-width: 80%;
+    height: auto;
+    margin: 0.5em auto;
+    display: block;
+    border-radius: 4px; /* Slight rounding for aesthetics */
+  }
+  
+  /* Inline Images (side-by-side) */
+  .inline-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+  }
+  .inline-images img {
+    max-width: 300px;
+    border-radius: 4px; /* Matches above */
+  }
+  
+  /* Descriptions or Captions */
+  .description {
+    margin: 0.5em 0;
+    font-size: 1em;
+    color: #666; /* Slightly lighter text for captions */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+      gap: 0.5em;
+    }
+    .section-title {
+      text-align: center; /* Center section titles on small screens */
+    }
+    .col {
+      border-right: none; /* Remove column borders on small screens */
+    }
+  }
+  
